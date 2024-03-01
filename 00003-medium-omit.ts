@@ -1,13 +1,13 @@
 // ============= Test Cases =============
-import type { Equal, Expect } from './test-utils'
+import type { Equal, Expect } from "./test-utils"
 
 type cases = [
-  Expect<Equal<Expected1, MyOmit<Todo, 'description'>>>,
-  Expect<Equal<Expected2, MyOmit<Todo, 'description' | 'completed'>>>,
+  Expect<Equal<Expected1, MyOmit<Todo, "description">>>,
+  Expect<Equal<Expected2, MyOmit<Todo, "description" | "completed">>>,
 ]
 
 // @ts-expect-error
-type error = MyOmit<Todo, 'description' | 'invalid'>
+type error = MyOmit<Todo, "description" | "invalid">
 
 interface Todo {
   title: string
@@ -23,7 +23,6 @@ interface Expected1 {
 interface Expected2 {
   title: string
 }
-
 
 // ============= Your Code Here =============
 type MyOmit<T, K extends keyof T> = {
