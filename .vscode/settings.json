@@ -5,5 +5,8 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
-  }
+  },
+  "cSpell.words": [
+    "keyof"
+  ]
 }
