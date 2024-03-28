@@ -14,4 +14,5 @@
 - 泛型下联合类型的分发特性 `A extends B ? true : false`，A 会变成联合类型其中的每一项去分别判断，最后联合返回
 - `任意类型 | never = 任意类型`
 - PromiseLike 类型是用于表示类似 Promise 的对象的接口，用于兼容不同 Promise 实现
--
+- 判断类型相等 https://github.com/Microsoft/TypeScript/issues/27024#issuecomment-421529650
+- 元组的第二种遍历方式 `T extends [infer F, ...infer R]` 一个一个遍历 -> 递归
